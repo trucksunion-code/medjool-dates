@@ -22,4 +22,15 @@ td.no{width:34px;font-weight:800;color:var(--gold)}td.desc{font-weight:700}td.pr
 .notes li{margin:5px 0}
 footer{margin-top:40px;padding:30px 0;text-align:center;border-top:1px solid var(--line);color:var(--muted)}footer .brand{font-weight:900;color:var(--gold);font-size:18px}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
+.season-banner{position:relative;margin:0 auto 26px;padding:26px 18px 8px;text-align:center}
+.season-banner .ribbon{display:inline-block;background:linear-gradient(135deg,var(--gold),#e0a94e);color:#fff;font-weight:900;font-size:clamp(20px,3.2vw,34px);letter-spacing:1px;padding:12px 26px;border-radius:14px;box-shadow:var(--sh);animation:flicker 3s ease-in-out infinite}
+.season-banner .tag{margin-top:8px;color:var(--muted);font-size:14px}
+@keyframes flicker{0%,100%{transform:translateY(0);filter:brightness(1)}50%{transform:translateY(-4px);filter:brightness(1.08)}}
+.gallery{display:flex;gap:16px;overflow-x:auto;padding:8px 4px 14px;scroll-snap-type:x mandatory}
+.gallery figure{flex:0 0 auto;width:300px;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);border:1px solid var(--line);scroll-snap-align:start;opacity:0;transform:translateY(24px)}
+.gallery figure.in{animation:gitem .7s ease forwards}
+@keyframes gitem{to{opacity:1;transform:none}}
+.gallery img{width:100%;height:210px;object-fit:cover;display:block;animation:kb 9s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.07)}}
+.gallery:nth-child(odd) img:nth-child(even) img{animation-delay:.6s}
 @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-frame{order:-1}}
