@@ -34,6 +34,6 @@ footer{margin-top:40px;padding:30px 0;text-align:center;border-top:1px solid var
 
 .top-logo{height:38px;width:auto;vertical-align:middle;margin-inline-end:10px}
 .brand-logo-wrap{display:flex;align-items:center}
-.hero-logo{height:auto;max-width:380px;width:100%;display:block;margin:0 auto 12px;animation:pulse 3s ease-in-out infinite;filter:drop-shadow(0 6px 18px rgba(13,59,143,.2));border-radius:16px}
-@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.9}}
+.hero-logo{height:auto;max-width:380px;width:100%;display:block;margin:0 auto 12px;animation:pulse 2.6s ease-in-out infinite;filter:drop-shadow(0 6px 18px rgba(13,59,143,.2));border-radius:16px}
+@keyframes pulse{0%,100%{transform:scale(.97);opacity:.96;filter:drop-shadow(0 4px 10px rgba(13,59,143,.18))}50%{transform:scale(1.06);opacity:1;filter:drop-shadow(0 10px 26px rgba(13,59,143,.28))}}
 @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-frame{order:-1}}
