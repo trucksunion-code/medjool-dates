@@ -23,7 +23,7 @@ td.no{width:34px;font-weight:800;color:var(--blue)}td.desc{font-weight:700}td.pr
 footer{margin-top:40px;padding:30px 0;text-align:center;border-top:1px solid var(--line);color:var(--muted)}footer .brand{font-weight:900;color:var(--blue);font-size:18px}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
 .season-banner{position:relative;margin:0 auto 26px;padding:26px 18px 8px;text-align:center}
-.season-banner .ribbon{display:inline-block;background:linear-gradient(135deg,var(--gold),#e0a94e);color:#fff;font-weight:900;font-size:clamp(20px,3.2vw,34px);letter-spacing:1px;padding:12px 26px;border-radius:14px;box-shadow:var(--sh);animation:flicker 3s ease-in-out infinite}
+.season-banner .ribbon{display:inline-block;background:linear-gradient(135deg,var(--blue),#0a2f73);color:#fff;font-weight:900;font-size:clamp(20px,3.2vw,34px);letter-spacing:1px;padding:12px 26px;border-radius:14px;box-shadow:var(--sh);animation:flicker 3s ease-in-out infinite}
 .season-banner .tag{margin-top:8px;color:var(--muted);font-size:14px}
 @keyframes flicker{0%,100%{transform:translateY(0);filter:brightness(1)}50%{transform:translateY(-4px);filter:brightness(1.08)}}
 .gallery{display:flex;gap:16px;padding:8px 0 14px;height:210px;width:max-content;animation:marquee 28s linear infinite}
@@ -34,6 +34,6 @@ footer{margin-top:40px;padding:30px 0;text-align:center;border-top:1px solid var
 
 .top-logo{height:38px;width:auto;vertical-align:middle;margin-inline-end:10px}
 .brand-logo-wrap{display:flex;align-items:center}
-.hero-logo{height:auto;max-width:260px;width:100%;display:block;margin:10px auto 20px;animation:pulse 3s ease-in-out infinite;filter:drop-shadow(0 6px 18px rgba(13,59,143,.2));border-radius:16px}
+.hero-logo{height:auto;max-width:380px;width:100%;display:block;margin:0 auto 12px;animation:pulse 3s ease-in-out infinite;filter:drop-shadow(0 6px 18px rgba(13,59,143,.2));border-radius:16px}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.05);opacity:.9}}
 @media(max-width:760px){.hero-grid{grid-template-columns:1fr}.hero-frame{order:-1}}
