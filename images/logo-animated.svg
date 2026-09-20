@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .leaf{transform-origin:center;animation:sway 3s ease-in-out infinite alternate}
+    .leaf.l2{animation-delay:.4s}
+    .leaf.l3{animation-delay:.8s}
+    .leaf.l4{animation-delay:1.2s}
+    @keyframes sway{from{transform:rotate(-3deg)}to{transform:rotate(4deg)}}
+  </style>
+  <!-- X -->
+  <path d="M30 160 L170 40 M170 160 L30 40" stroke="#0d3b8f" stroke-width="24" fill="none" stroke-linecap="round"/>
+  <!-- Palm trunk -->
+  <path d="M100 150 C95 110 100 90 105 70" stroke="#1e8f5a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Palm leaves -->
+  <g fill="#1e8f5a">
+    <path class="leaf l1" d="M105 70 Q70 50 55 65 Q80 85 105 70"/>
+    <path class="leaf l2" d="M105 70 Q140 50 155 65 Q130 85 105 70"/>
+    <path class="leaf l3" d="M100 90 Q60 85 45 100 Q75 115 100 90"/>
+    <path class="leaf l4" d="M100 90 Q140 85 155 100 Q125 115 100 90"/>
+    <path class="leaf" d="M102 80 Q80 100 70 125 Q95 110 102 80"/>
+    <path class="leaf l4" d="M102 80 Q125 100 135 125 Q110 110 102 80"/>
+  </g>
+  <!-- Dates cluster -->
+  <ellipse cx="88" cy="132" rx="10" ry="12" fill="#1e8f5a"/>
+  <ellipse cx="104" cy="140" rx="9" ry="11" fill="#1e8f5a"/>
+  <ellipse cx="118" cy="132" rx="8" ry="10" fill="#1e8f5a"/>
+  <!-- Text -->
+  <text font-family="Arial, sans-serif" font-weight="900" font-size="18" text-anchor="middle">
+    <tspan x="55" y="175" fill="#1e8f5a">Jordan</tspan>
+    <tspan x="145" y="175" fill="#0d3b8f">X Dates</tspan>
+  </text>
+</svg>
